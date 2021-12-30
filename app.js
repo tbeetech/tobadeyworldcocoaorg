@@ -1,5 +1,5 @@
 require('dotenv').config();
-const PORT = 8080 || process.env.PORT
+const PORT = 8080
 const express = require ('express')
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
@@ -14,6 +14,6 @@ app.set('view engine', 'ejs')
 app.get('/', (req, res)=>{
     res.render('index')
 })
-app.listen(PORT, ()=>{
+app.listen(process.env.PORT || PORT, ()=>{
     console.log('tobadeyDevelopmentServer running @ PORT:: ['+PORT+ ']')
 })
