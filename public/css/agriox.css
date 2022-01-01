@@ -38,6 +38,8 @@
   --bs-gutter-y: 30px;
 }
 
+html,body{ overflow-x: hidden; overflow-y: auto; }
+
 body {
   font-family: var(--agriox-font, "DM Sans", sans-serif);
   color: var(--agriox-color-1, #687469);
@@ -12760,3 +12762,5 @@ Sidebar
   color: #686a6f;
 }
 /*# sourceMappingURL=agriox.css.map */
+
+
