@@ -10410,7 +10410,7 @@ Sidebar
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -12764,3 +12764,21 @@ Sidebar
 /*# sourceMappingURL=agriox.css.map */
 
 
+
+.centerServiceSection {
+  margin: auto !important;
+  background-color: #333029;
+
+}
+@media  screen and (min-width: 460px) {
+  .shiftServiceLeft {
+    position: relative !important;
+    left: 180px !important;
+  }
+  
+}
+.missionImage{
+  width: 60px;
+  position: relative;
+  bottom: 20px;
+}
