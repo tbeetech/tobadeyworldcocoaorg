@@ -119,6 +119,15 @@ style="background-image: url(assets/images/gallery.jpg);">
         </section>
         <!--News Sidebar End-->
 
+        <script>	
+            $(document).ready(function(){
+                $(".homecls").removeClass("current");
+                $(".gallerycls").addClass("current");
+                $(".aboutcls").removeClass("current");
+                $(".contactcls").removeClass("current");
+                  
+            });
+            </script>
         <%- include('partials/footer') %>
 
 </html>

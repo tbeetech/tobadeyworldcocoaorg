@@ -345,7 +345,7 @@
         <!--About Two End-->
 
         <!--Services One Start-->
-        <section class="padbox services-one services-one--has-top-bg">
+        <section id="service_view" class="padbox services-one services-one--has-top-bg">
             <div class="container">
                 <div class="sec-title text-center">
                     <div class="icon">
@@ -713,7 +713,16 @@
 
 
 
-      
+        <script>	
+            $(document).ready(function(){
+                $(".homecls").addClass("current");
+                $(".gallerycls").removeClass("current");
+                $(".aboutcls").removeClass("current");
+                $(".contactcls").removeClass("current");
+                  
+            });
+            </script>
+
         <!--Video One End-->
 <%- include('partials/footer') %>
 </html>

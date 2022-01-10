@@ -12999,6 +12999,7 @@ h1 {
 }
 
 .padbox {
-  margin: 10px !important;
+  padding-left: 9px !important;
+  padding-left: 9px !important;
   /* background-color: red; */
 }
