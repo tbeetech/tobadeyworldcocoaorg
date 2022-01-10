@@ -17,6 +17,10 @@ app.set('view engine', 'ejs')
 app.get('/', (req, res)=>{
     res.render('index')
 })
+
+app.get('/gallery', (req, res)=> {
+    res.render('gallery')
+})
 app.listen(process.env.PORT || PORT, ()=>{
     console.log('tobadeyDevelopmentServer running @ PORT:: ['+PORT+ ']')
 })
