@@ -21,6 +21,11 @@ app.get('/', (req, res)=>{
 app.get('/gallery', (req, res)=> {
     res.render('gallery')
 })
+
+app.get('/about_services', (req, res)=>{
+    res.render('about_services')
+})
+
 app.listen(process.env.PORT || PORT, ()=>{
     console.log('tobadeyDevelopmentServer running @ PORT:: ['+PORT+ ']')
 })
