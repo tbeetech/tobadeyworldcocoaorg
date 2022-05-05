@@ -5,10 +5,10 @@ const bodyParser = require('body-parser')
 var favicon = require('serve-favicon')
 var path = require('path')
 var app = express()
-const mongoose = require('mongoose')
+// const mongoose = require('mongoose')
 const bcrypt = require('bcrypt')
 const ejs = require('ejs')
-mongoose.connect('mongodb://localhost:27017/userDB', {useNewUrlParser: true})
+// mongoose.connect('mongodb://localhost:27017/userDB', {useNewUrlParser: true})
 bodyParser.urlencoded({extended: true})
 app = express();
 app.use(express.static(__dirname + "/public"));
