@@ -12,7 +12,8 @@ mongoose.connect('mongodb://localhost:27017/userDB', {useNewUrlParser: true})
 bodyParser.urlencoded({extended: true})
 app = express();
 app.use(express.static('public'))
-app.use(favicon(path.join(__dirname, 'public', 'images/favicon.ico')))
+app.use(favicon(path.join(__dirname,'public','images','favicon.ico')));
+
 app.set('view engine', 'ejs')
 app.get('/', (req, res)=>{
     res.render('index')
